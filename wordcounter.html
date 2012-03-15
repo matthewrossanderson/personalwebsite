@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>Awesome Javascript WordCounter</title>
+<script type='text/javascript'>
+function main(input) {
+	var inputLower = input.toLowerCase();
+	var wordArray = inputLower.split(" ");
+	//console.log(wordArray);
+	var ignoredWords = ["", "-", ",", "'", ".", "\\", "\"", "\n", "\r", "\t", "\b", "\f", "\'\'"];
+
+	var countArray = [];
+	for (w = 0; w < wordArray.length; w++){
+		var word = wordArray[w];
+		
+		//remove non-desired punctuation from words
+		word = word.replace(".","");
+		word = word.replace(",","");
+		word = word.replace("\"","");
+		word = word.replace(";","");
+		word = word.replace(":","");
+		
+		/*verify it's actually a word, by exluding predefined non-words*/
+		var isWord = true;
+		for (i = 0; i < ignoredWords.length; i++) {
+			if (word === ignoredWords[i]){
+				isWord = false;
+			}
+		}
+		
+		if (isWord) {
+			/* search through countArray to see if the word exists already */
+			var index = -1;
+			for (e = 0; e < countArray.length; e++){
+				if (countArray[e][0] === word) {
+					index = e;
+				}
+			}
+			if (index === -1) {  //didn't find it, new word.
+				//push onto countArray with count of 1
+				countArray.push([word,1]);
+			}
+			else {  //found it, increment countArray
+				countArray[index][1]++;
+			}
+		}
+	}
+	
+	//output it
+	var output = "";
+	for (c = 0; c < countArray.length; c++) {
+		output += countArray[c][0] + "=" + countArray[c][1] + "<br/>";
+		//console.log(countArray[c][0] + "=" + countArray[c][1]);
+		
+		
+	}
+	//show it to the world
+	console.log(output);
+	document.getElementById('resultsWrapper').style.display = "block";
+	document.getElementById('results').innerHTML = output;
+	
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Awesome Javascript Word Counter</h2>
+
+<h3>The Form</h3>
+Input text below, click go and it will return how many times each word appears.
+
+<form name='textForm'>
+<textarea rows='10' cols='50' name = 'raw' /></textarea>
+<br/>
+<button type = 'button' onclick = 'main(document.textForm.raw.value);' name='run' title='go'>Go!</button>
+</form>
+
+<div id = 'resultsWrapper' style = 'display:none;'>
+<h3>The Results</h3>
+<div id = 'results'></div>
+</div>
+
+<br/>
+<br/>
+<h3>Sample Text for Testing</h3>
+
+<h4>My test sentence</h4>
+the lazy brown cat jumped over the awesome yellow dog.
+<br/>
+<br/>
+<h4>Catcher in the Rye</h4>
+"Anyway, I keep picturing all these little kids playing some game in this big field of rye and all. Thousands of little kids, and nobody's around - nobody big, I mean - except me. And I'm standing on the edge of some crazy cliff. What I have to do, I have to catch everybody if they start to go over the cliff - I mean if they're running and they don't look where they're going I have to come out from somewhere and catch them. That's all I do all day. I'd just be the catcher in the rye and all. I know it's crazy, but that's the only thing I'd really like to be."
+<br/>
+<br/>
+<h4>Gulliver's Travels</h4>
+The author gives some account of himself and family.  His first
+inducements to travel.  He is shipwrecked, and swims for his life.  Gets
+safe on shore in the country of Lilliput; is made a prisoner, and carried
+up the country.
+
+My father had a small estate in Nottinghamshire: I was the third of five
+sons.  He sent me to Emanuel College in Cambridge at fourteen years old,
+where I resided three years, and applied myself close to my studies; but
+the charge of maintaining me, although I had a very scanty allowance,
+being too great for a narrow fortune, I was bound apprentice to Mr. James
+Bates, an eminent surgeon in London, with whom I continued four years.
+My father now and then sending me small sums of money, I laid them out in
+learning navigation, and other parts of the mathematics, useful to those
+who intend to travel, as I always believed it would be, some time or
+other, my fortune to do.  When I left Mr. Bates, I went down to my
+father: where, by the assistance of him and my uncle John, and some other
+relations, I got forty pounds, and a promise of thirty pounds a year to
+maintain me at Leyden: there I studied physic two years and seven months,
+knowing it would be useful in long voyages.
+
+
+</body>
+</html>
+

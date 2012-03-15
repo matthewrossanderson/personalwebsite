@@ -1,0 +1,18 @@
+RewriteEngine on
+
+
+#if the uri doesnt point to an existing file
+RewriteCond %{REQUEST_FILENAME} !-f
+#if the uri + .php matches a php file
+RewriteCond %{REQUEST_FILENAME}.php -f
+#redirect to the php file
+RewriteRule (.*) $1.php [L,QSA]
+
+#if the uri doesnt point to an existing file
+RewriteCond %{REQUEST_FILENAME} !-f
+#if the uri + .php matches a php file
+RewriteCond %{REQUEST_FILENAME}.html -f
+#redirect to the html file
+RewriteRule (.*) $1.html [L,QSA]
+
+AddHandler php-legacy .php

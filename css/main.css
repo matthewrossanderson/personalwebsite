@@ -30,12 +30,12 @@ body {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #DDD;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #DDD;
     text-shadow: none;
 }
 
@@ -92,6 +92,59 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+body {
+    background-color: #111;
+    color:#CCC;
+}
+
+#name p {
+    font-size: 100px;
+    font-family: league-gothic, Arial, sans-serif;
+}
+
+p {
+    line-height: 1em;
+    margin: 0em 0em;
+}
+
+#name, #details {
+    margin-left: 10px
+}
+
+#details {
+    margin-top: 60px;
+}
+
+#details p {
+    margin-top: 5px;
+    font-family: 'Reenie Beanie', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.hide {
+    display:none;
+}
+
+#details p:hover {
+    text-decoration: underline;
+}
+
+#details p:hover span {
+    display: inline;
+    visibility: visible;
+}
+
+
+a {
+    color: #CCC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 
 

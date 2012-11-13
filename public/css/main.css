@@ -92,10 +92,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+html, body {
+	height: 100%;
+}
 body {
     background-color: #111;
     color:#CCC;
+}
+
+.wrapper {min-height: 99%;}
+
+.main {overflow:auto;
+	padding-bottom: 300px;}  /* must be same height as the footer */
+
+.footer {position: relative;
+	margin-top: -300px; /* negative value of footer height */
+	height: 300px;
+	clear:both;} 
+
+p {
+    line-height: 1em;
+    margin: 0em 0em;
+}
+
+#name {
+    margin-top: 10px;
+    margin-bottom: 45px;
 }
 
 #name p {
@@ -103,18 +125,11 @@ body {
     font-family: league-gothic, Arial, sans-serif;
 }
 
-p {
-    line-height: 1em;
-    margin: 0em 0em;
-}
 
 #name, #details {
     margin-left: 10px
 }
 
-#details {
-    margin-top: 60px;
-}
 
 #details p {
     margin-top: 5px;
@@ -145,20 +160,6 @@ a {
 a:hover {
     /*text-decoration: underline;*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

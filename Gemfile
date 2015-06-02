@@ -9,3 +9,7 @@ gem "redcarpet"
 # gem 'coffee-filter' # Coffeescript filter for HAML
 gem "zurb-foundation"
 gem 'json', '~> 1.7.7'
+
+gem 'foreman',   '~> 0.63'
+gem 'puma',      '~> 2.7'
+gem 'rack-contrib'

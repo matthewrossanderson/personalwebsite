@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body {
+/*	height: 100%;*/
+}
+body {
+    background-image: url('/images/whitey.png');
+    background-repeat: repeat;
+    color:#333;
+}
+
+#content {
+    margin-top: 40px;
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+/*Sticky Footer*/
+
+/*
+.wrapper {min-height: 99%;}
+
+.main {
+    overflow:auto; // must be same height as the footer
+	padding-bottom: 300px;
+}  
+
+footer {
+    position: relative;
+	margin-top: -300px;  // negative value of footer height 
+	height: 300px;
+	clear:both;
+} 
+*/
+
+.index {
+  p {
+    margin-bottom: 15px;
+  }
+  .row{
+    margin-bottom: 10px;
+  }
+  #quote{
+    margin-top: 30px;
+  }
+  h5 {
+    color: #333;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+#personal {
+  ul li{
+      margin-left: 30px;
+  }
+}
+
+.portfolio {
+  h5, h2{ 
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  }
+  .row {
+    margin-bottom: 40px;
+  }
+  .spacing{
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.shadow {
+  /*-webkit-filter: greyscale(0.4);*/
+  position: relative;
+  padding: 0px;
+  margin: 0px 0px 0px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+
+
+p {
+    line-height: 1em;
+    margin: 0em 0em;
+}
+
+#name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    p {
+        font-size: 100px;
+        font-family: league-gothic, Arial, sans-serif;
+    }
+}
+
+#name, #details {
+    margin-left: 10px
+}
+
+
+#details p {
+    margin-top: 5px;
+    font-family: 'Reenie Beanie', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+#email-link {
+  a span {
+    font-size: 22px;
+    margin-left: -5px;
+  }
+}
+
+.hide {
+    display:none;
+}
+
+#details p:hover {
+    /*text-decoration: underline;*/
+    span {
+        display: inline;
+        visibility: visible;
+        line-height: initial;
+    }
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    /*text-decoration: underline;*/
+}

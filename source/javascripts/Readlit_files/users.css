@@ -1,0 +1,30 @@
+/* line 6, ../../app/assets/stylesheets/users.css.scss */
+.devise {
+  font-family: "Lucida Grande", "sans-serif";
+  margin-top: 80px;
+  width: 400px;
+  background: #EEE;
+  padding: 10px 0px 20px 20px;
+  line-height: 23px;
+}
+/* line 14, ../../app/assets/stylesheets/users.css.scss */
+.devise label {
+  font-size: 18px;
+}
+/* line 17, ../../app/assets/stylesheets/users.css.scss */
+.devise h2 {
+  margin: 10px 0px;
+  font-size: 30px;
+  text-align: left;
+}
+/* line 23, ../../app/assets/stylesheets/users.css.scss */
+.devise .submit {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+}
+/* line 28, ../../app/assets/stylesheets/users.css.scss */
+.devise .shared-links {
+  margin-top: 20px;
+  font-size: 20px;
+}

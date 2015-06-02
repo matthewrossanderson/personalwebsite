@@ -1,0 +1,209 @@
+/* line 1, ../../app/assets/stylesheets/books.css.scss */
+.container.books {
+  margin-top: 110px;
+}
+
+/* line 5, ../../app/assets/stylesheets/books.css.scss */
+#toc-toggle {
+  margin-left: 20px;
+}
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+  /* line 8, ../../app/assets/stylesheets/books.css.scss */
+  #toc-toggle img {
+    margin-top: 5px;
+  }
+}
+
+/* line 14, ../../app/assets/stylesheets/books.css.scss */
+#section {
+  margin-right: 10%;
+  color: #999;
+}
+
+/* line 19, ../../app/assets/stylesheets/books.css.scss */
+.book-nav {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* line 23, ../../app/assets/stylesheets/books.css.scss */
+#book-title {
+  margin-left: 10%;
+  display: inline-block;
+  white-space: nowrap;
+  color: #999;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media only screen and (min-width: 960px) {
+  /* line 23, ../../app/assets/stylesheets/books.css.scss */
+  #book-title {
+    margin-left: 25%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  /* line 23, ../../app/assets/stylesheets/books.css.scss */
+  #book-title {
+    width: 210px;
+  }
+}
+
+/* line 39, ../../app/assets/stylesheets/books.css.scss */
+.book-nav {
+  background-color: #EEE;
+  width: 10%;
+  float: left;
+  height: 50px;
+}
+
+/* line 48, ../../app/assets/stylesheets/books.css.scss */
+.book section {
+  /*border-bottom: 1px solid #DDD; */
+}
+/* line 52, ../../app/assets/stylesheets/books.css.scss */
+.book .sections {
+  width: 95%;
+  margin-left: 5%;
+}
+@media only screen and (min-width: 320px) {
+  /* line 52, ../../app/assets/stylesheets/books.css.scss */
+  .book .sections {
+    width: 90%;
+    margin-left: 4%;
+  }
+}
+/* line 62, ../../app/assets/stylesheets/books.css.scss */
+.book #toc {
+  margin-bottom: 20px;
+  border-right: 1px solid #dfdfdf;
+  font-size: 12px;
+}
+@media only screen and (min-width: 320px) {
+  /* line 62, ../../app/assets/stylesheets/books.css.scss */
+  .book #toc {
+    margin-top: 80px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 62, ../../app/assets/stylesheets/books.css.scss */
+  .book #toc {
+    margin-top: 80px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 62, ../../app/assets/stylesheets/books.css.scss */
+  .book #toc {
+    margin-top: 80px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 62, ../../app/assets/stylesheets/books.css.scss */
+  .book #toc {
+    margin-top: 80px;
+  }
+}
+/* line 81, ../../app/assets/stylesheets/books.css.scss */
+.book #toc ul {
+  list-style-type: none;
+}
+
+/* line 88, ../../app/assets/stylesheets/books.css.scss */
+.sidr {
+  webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: "Lucida Grande", "sans-serif";
+}
+
+/* line 96, ../../app/assets/stylesheets/books.css.scss */
+a {
+  color: #4e4e4e;
+}
+
+/* line 102, ../../app/assets/stylesheets/books.css.scss */
+*:empty:not(img):not(input):not(br), br + br, creator, .pgheader, hr, .copyright, .tnote, .toc,
+#pgepubid00003 {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* line 159, ../../app/assets/stylesheets/books.css.scss */
+#pgepubid00001 {
+  /*@extend %hidden;*/
+}
+
+/* line 172, ../../app/assets/stylesheets/books.css.scss */
+.c1 {
+  text-align: center;
+}
+
+/* line 178, ../../app/assets/stylesheets/books.css.scss */
+h1,
+h2,
+h3 {
+  color: #2c2c2c;
+}
+
+/* line 183, ../../app/assets/stylesheets/books.css.scss */
+h2,
+h3 {
+  font-weight: 600;
+}
+
+/* line 188, ../../app/assets/stylesheets/books.css.scss */
+h1,
+h2 {
+  text-align: center;
+}
+
+/* line 192, ../../app/assets/stylesheets/books.css.scss */
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+/* line 198, ../../app/assets/stylesheets/books.css.scss */
+h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+/* line 204, ../../app/assets/stylesheets/books.css.scss */
+h2 {
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+/* line 209, ../../app/assets/stylesheets/books.css.scss */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 320px) {
+  /* line 216, ../../app/assets/stylesheets/books.css.scss */
+  body {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /* line 219, ../../app/assets/stylesheets/books.css.scss */
+  body {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 222, ../../app/assets/stylesheets/books.css.scss */
+  body {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 225, ../../app/assets/stylesheets/books.css.scss */
+  body {
+    font-size: 29px;
+  }
+}
